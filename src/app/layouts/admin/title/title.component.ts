@@ -23,7 +23,7 @@ export class TitleComponent implements OnInit {
             }
           });
         } while (currentRoute);
-        this.titleService.setTitle(title + ' | Food App Admin');
+        this.titleService.setTitle(title + ' | Enjoy Admin App');
       });
   }
 
