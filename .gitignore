@@ -36,3 +36,4 @@ src/assets/images/.DS_Store
 
 # Environments
 src/environments/*
+firebase-debug.log
