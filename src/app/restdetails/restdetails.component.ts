@@ -38,7 +38,7 @@ export class RestdetailsComponent implements OnInit {
   name: any = '';
   descritions: any = '';
   haveData: boolean = false;
-  dishPrice: any = '';
+  deliveryCharge: any = '';
   time: any = '';
   cusine: any;
 
@@ -127,7 +127,7 @@ export class RestdetailsComponent implements OnInit {
         this.latitude = data.lat;
         this.longitude = data.lng;
         this.time = data.time;
-        this.dishPrice = data.dishPrice;
+        this.deliveryCharge = data.deliveryCharge;
         this.cusine = data.cusine;
         this.openTime = data.openTime;
         this.city = data.city;
@@ -215,11 +215,11 @@ export class RestdetailsComponent implements OnInit {
     this.selectedItems.forEach(element => {
       this.cusine.push(element.item_id);
     });
-    console.log(this.name, this.address, this.descritions, this.dishPrice, this.time,
+    console.log(this.name, this.address, this.descritions, this.deliveryCharge, this.time,
       this.cusine, this.openTime, this.closeTime);
-    if (this.name === '' || this.address === '' || this.descritions === '' || this.dishPrice === '' || this.time === '' ||
+    if (this.name === '' || this.address === '' || this.descritions === '' || this.deliveryCharge === '' || this.time === '' ||
       !this.cusine || this.phone === ''
-      || !this.phone || !this.cusine.length || this.openTime === '' || this.closeTime === '' || !this.dishPrice
+      || !this.phone || !this.cusine.length || this.openTime === '' || this.closeTime === '' || !this.deliveryCharge
       || !this.openTime || !this.closeTime) {
       this.error(this.api.translate('All Fields are required'));
       return false;
@@ -266,7 +266,7 @@ export class RestdetailsComponent implements OnInit {
       lat: this.latitude,
       lng: this.longitude,
       cover: this.coverImage,
-      dishPrice: this.dishPrice,
+      deliveryCharge: this.deliveryCharge,
       time: this.time,
       cusine: this.cusine,
       openTime: this.openTime,
@@ -309,7 +309,7 @@ export class RestdetailsComponent implements OnInit {
     });
 
     if (this.email === '' || this.fname === '' || this.lname === '' || this.phone === '' || this.password === ''
-      || this.name === '' || this.address === '' || this.descritions === '' || this.dishPrice === '' || this.time === ''
+      || this.name === '' || this.address === '' || this.descritions === '' || this.deliveryCharge === '' || this.time === ''
       || this.city === '' || !this.city || !this.cusine || !this.cusine.length || this.openTime === '' || this.closeTime === '' ||
       !this.openTime || !this.closeTime) {
       this.error(this.api.translate('All Fields are required'));
@@ -368,7 +368,7 @@ export class RestdetailsComponent implements OnInit {
               lat: this.latitude,
               lng: this.longitude,
               cover: this.coverImage,
-              dishPrice: this.dishPrice,
+              deliveryCharge: this.deliveryCharge,
               time: this.time,
               ratting: 0,
               cusine: this.cusine,
