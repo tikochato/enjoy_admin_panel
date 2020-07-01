@@ -41,7 +41,8 @@ export class RestdetailsComponent implements OnInit {
   deliveryCharge: any = '';
   time: any = '';
   cusine: any;
-
+  minimumPurchase: any = '';
+  minimumPurchaseCharge: any = '';
   email: any = '';
   openTime;
   closeTime;
@@ -129,6 +130,8 @@ export class RestdetailsComponent implements OnInit {
         this.time = data.time;
         this.deliveryCharge = data.deliveryCharge;
         this.cusine = data.cusine;
+        this.minimumPurchase = data.minimumPurchase;
+        this.minimumPurchaseCharge = data.minimumPurchaseCharge;
         this.openTime = data.openTime;
         this.city = data.city;
         this.closeTime = data.closeTime;
@@ -219,7 +222,7 @@ export class RestdetailsComponent implements OnInit {
       this.cusine, this.openTime, this.closeTime);
     if (this.name === '' || this.address === '' || this.descritions === '' || this.deliveryCharge === '' || this.time === '' ||
       !this.cusine || this.phone === ''
-      || !this.phone || !this.cusine.length || this.openTime === '' || this.closeTime === '' || !this.deliveryCharge
+      || !this.phone || !this.cusine.length || this.openTime === '' || this.closeTime === ''
       || !this.openTime || !this.closeTime) {
       this.error(this.api.translate('All Fields are required'));
       return false;
@@ -270,6 +273,8 @@ export class RestdetailsComponent implements OnInit {
       time: this.time,
       cusine: this.cusine,
       openTime: this.openTime,
+      minimumPurchase: this.minimumPurchase || 0,
+      minimumPurchaseCharge: this.minimumPurchaseCharge || 0,
       closeTime: this.closeTime,
       isClose: false,
       phone: this.phone,
@@ -374,6 +379,8 @@ export class RestdetailsComponent implements OnInit {
               cusine: this.cusine,
               totalRatting: 0,
               openTime: this.openTime,
+              minimumPurchase: this.minimumPurchase,
+              minimumPurchaseCharge: this.minimumPurchaseCharge,
               isClose: true,
               phone: this.phone,
               status: 'open',

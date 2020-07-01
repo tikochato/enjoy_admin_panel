@@ -75,6 +75,18 @@
                         <input [(ngModel)]="openTime" type="time" class="form-control"
                             [placeholder]="('Opening Time'| translate) || '&nbsp;'">
                     </div>
+
+                    <div class="col-sm-6">
+                        <label>{{'Minimum Purchase'| translate}}</label>
+                        <input [(ngModel)]="minimumPurchase" type="number" class="form-control"
+                            placeholder="{{'Minimum Purchase'| translate}}">
+                    </div>
+                    <div class="col-sm-6">
+                        <label>{{'Minimum Purchase Charge'| translate}}</label>
+                        <input [(ngModel)]="minimumPurchaseCharge" type="number" class="form-control"
+                            [placeholder]="('Minimum Purchase Charge'| translate) || '&nbsp;'">
+                    </div>
+
                     <div class="col-sm-6">
                         <label>{{'Closing Time'| translate}}</label>
                         <input [(ngModel)]="closeTime" type="time" class="form-control"

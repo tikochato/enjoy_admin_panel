@@ -173,5 +173,7 @@
     "Welcome to Setup Wizard": "Bienvenido al asistente de configuración",
     "Create Admin Profile": "Crear Administrador",
     "Admin Profile Created": "Perfil de administrador creado",
-    "Please Login with your credentials": "Por favor, inicie sesión con sus credenciales"
+    "Please Login with your credentials": "Por favor, inicie sesión con sus credenciales",
+    "Minimum Purchase": "Compra Mínima",
+    "Minimum Purchase Charge":"Recargo por Compra Mínima"
 }

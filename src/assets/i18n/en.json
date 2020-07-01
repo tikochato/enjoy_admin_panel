@@ -174,5 +174,7 @@
     "Welcome to Setup Wizard": "Welcome to Setup Wizard",
     "Create Admin Profile": "Create Admin Profile",
     "Admin Profile Created": "Admin Profile Created",
-    "Please Login with your credentials": "Please Login with your credentials"
+    "Please Login with your credentials": "Please Login with your credentials",
+    "Minimum Purchase": "Minimum Purchase",
+    "Minimum Purchase Charge":"Minimum Purchase Charge"
 }
